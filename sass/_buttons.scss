@@ -1,0 +1,40 @@
+button {
+	border: none;
+	background: none;
+}
+
+.btn__cta {
+	padding: 1em 2.8em;
+	border-radius: 999px;
+	background-color: $orange;
+	color: $very-light-gray;
+	box-shadow: 0px 10px 30px -10px $orange;
+
+	&--white {
+		background-color: $very-light-gray;
+		color: $orange;
+		box-shadow: 0px 10px 30px -18px rgba(66, 68, 90, 1);
+	}
+}
+
+@media (min-width: 1024px) {
+	button {
+		cursor: pointer;
+	}
+
+	.btn__cta {
+		transition: background-color 0.3s;
+
+		&:hover {
+			background-color: $orange-hover;
+		}
+		&--white {
+			transition: color 0.3s;
+
+			&:hover {
+				color: $orange-hover;
+				background-color: $white;
+			}
+		}
+	}
+}

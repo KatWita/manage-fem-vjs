@@ -1,0 +1,80 @@
+.simplify {
+	padding: 6em 0 5.5em;
+	background-color: $orange;
+	background-image: url(../images/bg-simplify-section-mobile.svg);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	text-align: center;
+
+	&__title {
+		margin-bottom: 0.7em;
+		color: $white;
+		font-size: 2.4rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.simplify {
+		padding: 3.2em 0 3.2em;
+		background-image: url(../images/bg-simplify-section-desktop.svg);
+		background-size: 120%;
+		background-position: 10vw -10vw;
+
+		.container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		&__title {
+			margin-bottom: 0;
+			max-width: 500px;
+			text-align: left;
+		}
+	}
+}
+
+@media (min-width: 1300px) {
+	.simplify {
+		background-size: 110%;
+		background-position: 15vw -10vw;
+
+		&__title {
+			max-width: 620px;
+			font-size: 2.8rem;
+		}
+	}
+}
+
+@media (min-width: 1350px) {
+	.simplify {
+		background-size: 112%;
+		background-position: 14vw -12vw;
+	}
+}
+
+@media (min-width: 1400px) {
+	.simplify {
+		padding: 3.5em 0 3.5em;
+	}
+}
+
+@media (min-width: 1500px) {
+	.simplify {
+		background-size: 118%;
+		background-position: 11vw -12vw;
+	}
+}
+
+@media (min-width: 1600px) {
+	.simplify {
+		background-size: 106%;
+		background-position: 15vw -12vw;
+	}
+}
+
+@media (min-width: 1700px) {
+	.simplify {
+		background-size: 94%;
+		background-position: 19vw -10vw;
+	}
+}

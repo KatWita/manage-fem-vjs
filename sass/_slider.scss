@@ -1,0 +1,154 @@
+.slider__container,
+.slider__dot-container {
+	display: flex;
+}
+
+.slider {
+	text-align: center;
+
+	.container {
+		padding-bottom: 2.8em;
+		overflow: hidden;
+	}
+
+	&__container {
+		position: relative;
+		margin-top: 6em;
+		gap: 2em;
+		width: 100%;
+		min-height: 200px;
+	}
+
+	&__slide {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 4em 2em 2em;
+		background-color: $very-light-gray;
+		transition: transform 0.3s;
+
+		&.first {
+			transform: translateX(calc(-100% - 2em));
+		}
+
+		&.active {
+			transform: translateX(0);
+		}
+
+		&.next {
+			transform: translateX(calc(100% + 2em));
+		}
+
+		&.last {
+			transform: translateX(calc(200% + 4em));
+		}
+	}
+
+	&__img {
+		position: absolute;
+		top: -36px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 72px;
+	}
+
+	&__name {
+		margin-bottom: 1em;
+		color: $dark-blue;
+		font-weight: bold;
+	}
+
+	&__quote {
+		font-size: 0.84rem;
+		line-height: 1.6rem;
+	}
+
+	&__dot-container {
+		justify-content: center;
+		gap: 0.25em;
+	}
+
+	&__dot {
+		margin: 1.7em 0 3em;
+		width: 8px;
+		height: 8px;
+		border: 1px solid $orange;
+		border-radius: 50%;
+
+		&.active {
+			background-color: $orange;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.slider {
+		.container {
+			width: 380px;
+			overflow: unset;
+		}
+
+		&__container {
+			margin-bottom: 2.8em;
+			min-height: 240px;
+		}
+
+		&__dot-container {
+			display: none;
+		}
+	}
+}
+
+@media (min-width: 1100px) {
+	.slider .container {
+		width: 440px;
+	}
+
+	.slider__title {
+		font-size: 2.1rem;
+	}
+
+	.slider__quote {
+		font-size: 0.9rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	.slider .container {
+		width: 480px;
+	}
+
+	.slider__title {
+		font-size: 2.15rem;
+	}
+
+	.slider__quote {
+		font-size: 0.97rem;
+	}
+}
+
+@media (min-width: 1444px) {
+	.slider .container {
+		width: 510px;
+	}
+}
+
+@media (min-width: 1550px) {
+	.slider .container {
+		width: 580px;
+	}
+}
+
+@media (min-width: 1650px) {
+	.slider .container {
+		width: 640px;
+	}
+}
+
+@media (min-width: 1700px) {
+	.slider .container {
+		width: 740px;
+	}
+}
