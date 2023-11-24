@@ -16,7 +16,7 @@
 		margin-top: 6em;
 		gap: 2em;
 		width: 100%;
-		min-height: 200px;
+		min-height: 260px;
 	}
 
 	&__slide {
@@ -83,6 +83,24 @@
 	}
 }
 
+@media (min-width: 360px) {
+	.slider__container {
+		min-height: 270px;
+	}
+}
+
+@media (min-width: 360px) {
+	.slider__container {
+		min-height: 260px;
+	}
+}
+
+@media (min-width: 768px) {
+	.slider__container {
+		min-height: 220px;
+	}
+}
+
 @media (min-width: 1024px) {
 	.slider {
 		.container {
@@ -92,7 +110,7 @@
 
 		&__container {
 			margin-bottom: 2.8em;
-			min-height: 240px;
+			min-height: 250px;
 		}
 
 		&__dot-container {
